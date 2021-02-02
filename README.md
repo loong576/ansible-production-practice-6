@@ -58,6 +58,7 @@ yum方式需先更新yum源，然后直接执行`yum install sudo`即可；源�
 
 ![image-20210201170924497](https://i.loli.net/2021/02/02/wP9gndbBTrFkxAM.png)
 
+- "{{ hostlist }}"：执行对象，在执行时通过参数'-e hostlist='传入；
 - 'gcc check'：检查gcc是否安装，如果未安装则忽略报错让安装进程继续；
 - 'install gcc'：安装gcc，当gcc安装的检查结果不为0即未安装gcc时进行gcc的安装；
 - 'Unarchive sudo'：解压安装包并上传到目标服务器/root目录；
